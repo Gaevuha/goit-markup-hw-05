@@ -461,7 +461,6 @@ color: var(--color-primary-brand);
 }
 
 .footer-icons {
-    margin-left: 16px;
     fill: var(--color-white-background);
 }
 
@@ -527,10 +526,13 @@ color: var(--color-primary-brand);
     color: var(--color-white-background);
 }
 
+.footer-icons-botton {
+    fill: var(--color-white-background);
+    margin-left: 16px;
+}
+
 .footer-form {
     display: flex;
-    /* align-items: center;
-    justify-content: center; */
     gap: 24px;
 }
 
