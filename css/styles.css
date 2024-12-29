@@ -461,6 +461,7 @@ color: var(--color-primary-brand);
 }
 
 .footer-icons {
+    margin-left: 16px;
     fill: var(--color-white-background);
 }
 
@@ -519,7 +520,6 @@ color: var(--color-primary-brand);
     align-items: center;
     justify-content: center;
     cursor: pointer;
-    gap: 16px;
     border-radius: 4px;
     border: none;
     padding: 8px 24px;
@@ -579,9 +579,10 @@ color: var(--color-primary-brand);
 
 .modal {
     background-color: var(--color-modal-background);
-    border-radius: 8px;
-    /* top: 50%;
-    left: 50%; */
+    border-radius: 4px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); 
     padding: 72px 24px 24px 24px;
     width: 408px;
     min-height: 584px;
@@ -641,8 +642,8 @@ color: var(--color-primary-brand);
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.modal-icons-close:hover,
-.modal-icons-close:focus {
+.modal-close:hover .modal-icons-close,
+.modal-close:focus .modal-icons-close {
     fill: var(--color-white-background);
 }
 
@@ -753,7 +754,7 @@ color: var(--color-primary-brand);
 
 .modal-submit {
     display: block;
-    width: 169px;
+    min-width: 169px;
     height: 56px;
     margin: 0 auto;
     font-family: "Roboto", sans-serif;
