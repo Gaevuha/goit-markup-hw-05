@@ -491,13 +491,12 @@ color: var(--color-primary-brand);
 }
 
 .footer-sociale-list {
-    margin-right: 80px;
+    margin-right: auto;
 }
 
 .footer-sociale-list .sales-text {
     color: var(--color-white-background);
     font-weight: 500;
-    /* width: 96px; */
     margin-bottom: 16px;
 }
 
@@ -524,6 +523,11 @@ color: var(--color-primary-brand);
     padding: 8px 24px;
     background-color: var(--color-primary-brand);
     color: var(--color-white-background);
+}
+
+.send-button:hover,
+.send-button:focus {
+    background-color: var(--color-success);
 }
 
 .footer-icons-botton {
@@ -557,6 +561,8 @@ color: var(--color-primary-brand);
 	color: var(--color-white-background);
   
 }
+
+/*modal*/
 
  .modal-overlay {
     background-color: rgba(46, 47, 66, 0.4);
@@ -666,11 +672,6 @@ color: var(--color-primary-brand);
     margin-bottom: 16px;
 }
 
-.order-form {
-    display: flex;
-    flex-direction: column;
-    gap: 12px;
-}
 
 .input-group {
     margin-bottom: 8px;
@@ -733,6 +734,7 @@ color: var(--color-primary-brand);
 .checkbox.icons {
     width: 16px;
     height: 16px;
+    margin-right: 8px;
     border: 1px solid rgba(46, 47, 66, 0.4);
     border-radius: 2px;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -743,6 +745,13 @@ color: var(--color-primary-brand);
 }
 
 .visually-hidden:checked + .checkbox-privacy .checkbox.icons {
+    background-color: var(--color-pressed-state); /* Фон у стані checked */
+    border: none; /* Видаляємо рамку */
+    fill: var(--color-light); /* Змінюємо колір іконки */
+}
+
+.visually-hidden:hover + .checkbox-privacy .checkbox.icons,
+.visually-hidden:focus + .checkbox-privacy .checkbox.icons{
     background-color: var(--color-pressed-state); /* Фон у стані checked */
     border: none; /* Видаляємо рамку */
     fill: var(--color-light); /* Змінюємо колір іконки */
@@ -767,10 +776,12 @@ color: var(--color-primary-brand);
     color: var(--color-white-background);
     cursor: pointer;
     background-color: var(--color-primary-brand);
+    border-radius: 4px;
     border: none;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.modal-submit:hover {
-    background-color: #5348d1;
+.modal-submit:hover,
+.modal-submit:focus {
+    background-color: var(--color-pressed-state);
 }
