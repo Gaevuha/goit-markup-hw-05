@@ -145,10 +145,6 @@ letter-spacing: 0.02em;
 
     }
 
-/* .header-menu a:active::after {
-    width: 100%;  Лінія стає видимою 
-} */
-
 
 .address-menu {
     display: flex;
@@ -523,6 +519,7 @@ color: var(--color-primary-brand);
     padding: 8px 24px;
     background-color: var(--color-primary-brand);
     color: var(--color-white-background);
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .send-button:hover,
@@ -749,14 +746,6 @@ color: var(--color-primary-brand);
     border: none; /* Видаляємо рамку */
     fill: var(--color-light); /* Змінюємо колір іконки */
 }
-
-.visually-hidden:hover + .checkbox-privacy .checkbox.icons,
-.visually-hidden:focus + .checkbox-privacy .checkbox.icons{
-    background-color: var(--color-pressed-state); /* Фон у стані checked */
-    border: none; /* Видаляємо рамку */
-    fill: var(--color-light); /* Змінюємо колір іконки */
-}
-
 
 .checkbox-group a {
     color: var(--color-primary-brand);
